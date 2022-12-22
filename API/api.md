@@ -95,7 +95,7 @@
 - URL: `/collections/<collection_identity>/tokens?page=<page>&size=<size>`
 - Header:
     - `Content-Type: application/json`
-- Parama (QueryString):
+- Params (URL):
     - `page: <integer>` - page number, default 0
     - `size: <integer>` - page size, max 100
 - Params (Post Body):
@@ -275,12 +275,18 @@
 
 ### Request
 
-- Method: Get
+- Method: Post
 - URL: `/accounts/<wallet_address>/tokens?page=<page>&size=<size>`
-- Params:
+- Params (URL)
     - `wallet_address: <string>`
     - `page: <integer>` - page number, default 0
     - `size: <integer>` - page size, max 100
+- Params (Post Body)
+```
+{
+  "filter": "all"
+}
+```
 
 ### Response
 
