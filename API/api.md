@@ -2,6 +2,7 @@
 
 - Endpoint(mainnet): `https://aptomus-mainnet.souffl3.com/api/v1`
 - Endpoint(testnet): `https://aptomus-testnet.souffl3.com/api/v1`
+- Accept `Content-Type`: `application/json`
 
 ## Get top collections
 
